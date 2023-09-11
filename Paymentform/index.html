@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+    <title>PaymentForm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assest/icon.png" type="image/x-icon">
+</head>
+<body>
+    <main class="mainn">
+        <div class="form">
+            <h1 style="text-align: center;font-family: 'Frank Ruhl Libre'">Payment Form</h1>
+            <div class="innerbox">
+                <form action="#">
+                    <div class="innerform">
+                        <label>Name</label>
+                        <input type="text" name="fname" placeholder="Enter the name" class="tbox" required>
+                    </div>
+                    <div class="innerform" >
+                        <label>Email</label>
+                        <input type="email" name="mail" placeholder="Enter the email" class="tbox" required>
+                    </div>
+                    <div class="innerform">
+                        <label>PhoneNo</label>
+                        <input type="tel" name="phone" placeholder="Enter the phone" class="tbox" required>
+                    </div>
+                    <fieldset style="width:max-content;margin-top: 20px;">
+                        <legend>
+                            Gender
+                        </legend>
+                        <label><input type="radio" name="gender" value="male" required>Male </label>
+                        <label><input type="radio" name="gender" value="female">Female </label>
+                        <label><input type="radio" name="gender" value="other">Other</label>
+                    </fieldset>
+                    <div class="innerform">
+                        <label>Billing Address</label>
+                        <textarea name="address" id="address" cols="40" rows="10" class="tbox" required></textarea>
+                    </div>
+                    <hr>
+                    <h2 style="text-align: center;font-family: 'Frank Ruhl Libre','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Card Information</h2>
+                    <div class="innerform">
+                        <label>Select Card</label>
+                        <select name="card" id="card" required class="tbox">
+                            <option name="card" value="">Select a card type</option>
+                            <option  name="card" value="ruppe">Ruppe Card</option>
+                            <option name="card" value="'visa">Visa Card</option>
+                            <option name="card" value="master">Master Card</option>
+                        </select>
+                    </div>
+                    <div class="innerform">
+                        <label>Enter the Card Number</label>
+                        <input type="text" name="cardno" class="tbox" placeholder="Enter The Card Number" required>
+                    </div>
+                    <div class="innerform">
+                        <label>Expiration Date</label>
+                        <input type="month" name="edate" id="edate" class="tbox" required>
+                    </div>
+                    <div class="innerform">
+                        <label>
+                                CVV
+                        </label>
+                        <input type="password" name="cvv" id="cvv" class="tbox" required>
+                    </div>
+                    <div class="subutton">
+                        <input type="submit" value="Pay Now">
+                        <input type="reset" >
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
